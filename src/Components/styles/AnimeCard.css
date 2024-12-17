@@ -1,0 +1,49 @@
+.anime-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 400px; /* Altura fija */
+  overflow: hidden; /* Evita el desbordamiento */
+}
+
+.anime-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.anime-card-info {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Previene desbordamiento del contenido */
+}
+
+.anime-card h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.anime-card p {
+  font-size: 0.85em;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a 3 líneas */
+  -webkit-box-orient: vertical;
+}
